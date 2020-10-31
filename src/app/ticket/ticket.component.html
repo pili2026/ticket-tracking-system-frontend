@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="card">
+    <h3 class="test-center"> List </h3>
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <th>id</th>
+          <th>summary</th>
+          <th>description</th>
+          <th>ticketStatus</th>
+          <th>ticketType</th>
+          <th>priority</th>
+          <th>severity</th>
+          <th>createDate</th>
+          <th>resolveDate</th>
+          <th>reporter</th>
+          <th>assignee</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let ticket of tickets">
+            <td>{{ ticket.id}}</td>
+            <td>{{ ticket.summary}}</td>
+            <td>{{ ticket.description}}</td>
+            <td>{{ ticket.ticketStatus}}</td>
+            <td>{{ ticket.ticketType}}</td>
+            <td>{{ ticket.priority}}</td>
+            <td>{{ ticket.severity}}</td>
+            <td>{{ ticket.createDate}}</td>
+            <td>{{ ticket.resolveDate}}</td>
+            <td>{{ ticket.reporter}}</td>
+            <td>{{ ticket.assignee}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
