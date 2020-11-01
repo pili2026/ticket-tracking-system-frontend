@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="card">
+    <h3 class="test-center"> List </h3>
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <th>id</th>
+          <th>email</th>
+          <th>fullName</th>
+          <th>userRole</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{ user.id}}</td>
+            <td>{{ user.email}}</td>
+            <td>{{ user.fullName}}</td>
+            <td>{{ user.userRole}}</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
